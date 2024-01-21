@@ -1,0 +1,295 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>ABCW</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader ending here -->
+
+    <!-- Header section start here -->
+    <header class="header-section">
+        <div class="header-top d-none d-lg-block">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-7 col-12">
+                        <div class="ht-left">
+                            <ul class="agri-ul d-flex flex-wrap">
+                                <li><i class="icofont-envelope"></i><span>info@ashabenchikkiwala.com</span></li>
+                                <li><i class="icofont-phone"></i><span>+91 9510950120</span></li>
+                                <li><i class="icofont-stopwatch"></i><span>Mon - Sat 09:30 - 20:00</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="ht-right">
+                            <div class="scocial-media">
+                                <a href="https://www.facebook.com/profile.php?id=100066882205148&mibextid=ZbWKwL" class="facebook"><i class="icofont-facebook"></i></a>
+                                <a href="https://instagram.com/ashabenchikkiwala?igshid=MmU2YjMzNjRlOQ==" class="linkedin"><i class="icofont-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-area" style="background-color: #005c2e;">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="primary-menu">
+                        <div class="logo">
+                            <a href="home.aspx">
+                                <img src="/images/abcw-logo.png" alt="logo" style="height: 50px !important" /></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="icofont-navigation-menu"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="main-area">
+                                <div class="main-menu">
+                                    <ul class="agri-ul">
+                                        <li id="lihome" runat="server" class="active"><a href="home.aspx">Home</a>
+                                        </li>
+                                        <li runat="server" id="liAbout" class=""><a href="aboutus.aspx">About us</a>
+                                        </li>
+                                        <li id="liProduct" runat="server" class="">
+                                            <a href="Product.aspx">Product</a>
+                                            <ul class="agri-ul">
+                                                <li><a href="chikki.aspx">Chikki</a></li>
+                                                <li><a href="khakhara.aspx">khakhara</a></li>
+                                                <li><a href="sukavani.aspx">Sukavani</a></li>
+                                                <li><a href="Dates.aspx">khajur Product</a></li>
+                                                <li><a href="WinterItem.aspx">Winter Item</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li runat="server" id="licontact" class=""><a href="Contactus.aspx">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header section ending here -->
+
+    <!-- Banner Section Start Here -->
+   <%-- <section class="banner banner-4 bg_img">
+    </section>--%>
+    <!-- Banner Section Ending Here -->
+
+
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+    <!-- footer section start here -->
+    <footer class="footer-section padding-tb pb-0">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="footer-item">
+                            <div class="footer-inner">
+                                <div class="footer-logo">
+                                    <img src="/images/abcw-logo.png" alt="logo" style="height: 50px !important" />
+                                </div>
+                                <div class="footer-desc">
+                                 
+                                    <p>
+                                        We have the privilege of having valued and  loyal customers locally from Ahmedabad and pan-india. 
+                                            Not only that, but we have a customer base even in countries like the US, Canada, UK, Australia, Dubai.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="footer-item footer-blog">
+                            <div class="footer-inner">
+                                <div class="footer-title">
+                                    <h5>ABCW Product</h5>
+                                </div>
+                                <div class="footer-body">
+                                    <ul class="agri-ul">
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="blog-single.html">
+                                                    <img src="images/ImageProduct/Chikki/Dryfruits Chikki_01.jpg" alt="Dry Fruits Chikki"></a>
+                                            </div>
+                                            <div class="detalis">
+                                                <a href="blog-single.html">
+                                                    <h5>Dry Fruits Chikki</h5>
+                                                </a>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="blog-single.html">
+                                                    <img src="images/ImageProduct/Chikki/Rose Chikki_01.jpg" alt="Kaju Rose Petal Chikki"></a>
+                                            </div>
+                                            <div class="detalis">
+                                                <a href="blog-single.html">
+                                                    <h5>Kaju Rose Petal Chikki</h5>
+                                                </a>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="footer-item footer-gallery">
+                            <div class="footer-inner">
+                                <div class="footer-title">
+                                    <h5>ABCW Product</h5>
+                                </div>
+                                <div class="footer-body">
+                                    <ul class="agri-ul">
+                                        <li><a href="#">
+                                            <img src="images/ImageProduct/Chikki/BlackTil chikki_01.jpg" alt="Sing chikki"></a></li>
+                                        <li><a href="#">
+                                            <img src="images/ImageProduct/Chikki/Dryfruits Chikki_01.jpg" alt="Dry Fruits Chikki"></a></li>
+                                        <li><a href="#">
+                                            <img src="images/ImageProduct/Chikki/Rose Chikki_01.jpg" alt="Kaju Rose Petal Chikki"></a></li>
+                                        <li><a href="#">
+                                            <img src="images/ImageProduct/Farali/Potato Katri_01.jpg" alt="Potato Chips"></a></li>
+                                        <li><a href="#">
+                                            <img src="images/ImageProduct/Farali/Sabudana Bataka ni Sev_01.jpg" alt="Sabudana Potato Sev Red chilli"></a></li>
+                                        <li><a href="#">
+                                            <img src="images/ImageProduct/Farali/Sabudana Papad_01.jpg" alt="Sabudana Chamcha(papad)"></a></li>
+                                         <li><a href="#">
+                                             <img src="images/ImageProduct/Khakhara/Sada Khakhra_01.jpg" alt="Sada Khakhra" /></a></li>
+                                        <li><a href="#">
+                                             <img src="images/ImageProduct/Khakhara/Masala Khakhra_01.jpg" alt="Masala Khakhra" /></a></li>
+                                        <li><a href="#">
+                                             <img src="images/ImageProduct/Khakhara/jeera Khakhra_01.jpg" alt="Jeera Khakhra" /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="footer-item footer-addtess">
+                            <div class="footer-inner">
+                                <div class="footer-title">
+                                    <h5>Keep In Touch</h5>
+                                </div>
+                                <div class="footer-body">
+                                    <ul class="agri-ul">
+                                        <li>
+                                            <div class="icon">
+                                                <i class="icofont-google-map"></i>
+                                            </div>
+                                            <div class="detalis">
+                                                <p>1, Sukirti Anaxy,
+                                        Besides Prernatirth Bunglows Part - 2,
+                                        Opp. Shreyas Park Society,
+                                        ISRO colony Road, Satellite, Ahmedabad - 380015</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <i class="icofont-phone"></i>
+                                            </div>
+                                            <div class="detalis">
+                                                <p>+91 9510950120</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <i class="icofont-envelope"></i>
+                                            </div>
+                                            <div class="detalis">
+                                                <p>info@ashabenchikkiwala.com</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 All Rights Reserved (Terms Of Use) Developed and Managed by Bimal Rathod</p>
+        </div>
+
+    </footer>
+    <!-- footer section ending here -->
+
+  
+
+    <script src="js/jquery.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/lightcase.js"></script>
+    <script src="js/functions.js"></script>
+    
+    <script>
+        /* countdown */
+        $(function () {
+            var nextyear = '11/09/2021 17:00:00';
+            $('.countdown').countdown({
+                date: nextyear, //TODO Date format: 11/09/2021 17:00:00
+                offset: +2,
+                day: 'Day',
+                days: 'Days'
+            });
+        });
+    </script>
+</body>
+</html>
